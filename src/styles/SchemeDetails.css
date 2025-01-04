@@ -1,0 +1,122 @@
+.scheme-details {
+  padding: 20px;
+}
+
+.back-button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.back-button:hover {
+  background-color: #0056b3;
+}
+
+.scheme-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.scheme-info {
+  flex: 1 1 60%;
+  padding: 20px;
+  background: #f9f9f9;
+  border-radius: 10px;
+}
+
+.eligibility-form {
+  flex: 1 1 35%;
+  padding: 20px;
+  background: #f4f4f4;
+  border-radius: 10px;
+}
+
+.eligibility-form form label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.eligibility-form input,
+.eligibility-form select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.check-button {
+  background-color: #28a745;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.check-button:hover {
+  background-color: #218838;
+}
+
+.apply-button-container {
+  margin-top: 20px;
+}
+
+.apply-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.apply-button.disabled {
+  background-color: gray;
+  pointer-events: none;
+}
+
+.success-message {
+  color: green;
+}
+
+.error-message {
+  color: red;
+}
+
+/* Eligibility Text Animation */
+.eligibility-text {
+  animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .scheme-container {
+    flex-direction: column;
+  }
+}
+.error-message {
+  color: red;
+  font-size: 0.9rem;
+  margin-top: 5px;
+}
+
+.success-message {
+  color: green;
+  font-size: 1rem;
+  margin-top: 10px;
+}

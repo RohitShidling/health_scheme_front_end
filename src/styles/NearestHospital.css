@@ -1,0 +1,42 @@
+.nearest-hospital {
+    padding: 20px;
+  }
+  
+  .container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  #map {
+    flex: 2;
+    height: 70vh;
+  }
+  
+  .hospital-table {
+    flex: 1;
+    max-height: 70vh;
+    overflow-y: auto;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  table,
+  th,
+  td {
+    border: 1px solid #ccc;
+  }
+  
+  th,
+  td {
+    padding: 8px;
+    text-align: left;
+  }
+  
+  th {
+    background-color: #f2f2f2;
+  }
+  

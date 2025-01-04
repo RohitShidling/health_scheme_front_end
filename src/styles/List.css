@@ -1,0 +1,129 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body Styling */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    color: #000;
+    line-height: 1.6;
+  }
+  
+  /* Main Container */
+  .main-container {
+    padding: 20px;
+  }
+  
+  .content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+  }
+  
+  /* Health Schemes Section */
+  .health-schemes {
+    flex: 3;
+  }
+  
+  .health-schemes h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+  }
+  
+  .schemes-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  
+  .scheme-card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: left;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .scheme-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .scheme-card .icon {
+    font-size: 1.5rem;
+  }
+  
+  .scheme-card p {
+    font-size: 1rem;
+    margin-bottom: 15px;
+    color: #555;
+  }
+  
+  .scheme-card button {
+    padding: 10px 15px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .scheme-card button:hover {
+    background-color: #333;
+  }
+  
+  /* Quick Links Section */
+  .quick-links {
+    flex: 1;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .quick-links h3 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .quick-links ul {
+    list-style: none;
+  }
+  
+  .quick-links li {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .quick-links li .icon {
+    font-size: 1.5rem;
+  }
+  
+  .quick-links li p {
+    font-size: 0.9rem;
+    color: #555;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .content {
+      flex-direction: column;
+    }
+  
+    .schemes-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+  

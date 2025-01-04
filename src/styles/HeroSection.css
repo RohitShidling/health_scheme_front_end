@@ -1,0 +1,213 @@
+/* Container Styling */
+.hero-container {
+  position: relative;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #f8bbd0;
+  overflow: hidden;
+  border-radius: 20px;
+  
+}
+
+/* Search Bar Styling */
+.search-bar {
+  position: absolute;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 20px;
+  background: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  width: 70%; /* Fixed width for search bar */
+  max-width: 600px;
+  border-radius: 40px;
+  
+}
+
+.search-bar input {
+  flex: 1;
+  padding: 10px;
+  font-size: 1rem;
+  border: 2px solid #ff80ab;
+  border-radius: 20px;
+  outline: none;
+  transition: 0.3s;
+}
+
+.search-bar input:focus {
+  border-color: #f50057;
+  box-shadow: 0 0 10px rgba(245, 0, 87, 0.5);
+}
+
+.error-message{
+
+  transform: translatey(6px);
+}
+
+.search-bar button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #f50057;
+  color: white;
+  border: none;
+  
+  transform: translateY(-6px);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.search-bar button:hover {
+  background-color: #d50048;
+  box-shadow: 0 4px 15px rgba(213, 0, 72, 0.5);
+}
+
+/* Slider Styling */
+.slider {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.slider-images {
+  display: flex;
+  height: 100%;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slider-images img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: blur(50%); /* 2% blur applied to slider images */
+}
+
+.slider-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 5;
+  transition: 0.3s;
+}
+
+.slider-button.left {
+  left: 10px;
+}
+
+.slider-button.right {
+  right: 10px;
+}
+
+.slider-button:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .search-bar {
+    width: 90%;
+    padding: 5px 15px;
+  }
+
+  .search-bar input {
+    font-size: 0.9rem;
+    padding: 8px;
+  }
+
+  .search-bar button {
+    font-size: 0.9rem;
+    padding: 8px 15px;
+    
+  }
+}
+
+.search-results {
+  margin-top: 10px;
+  width: 100%;
+  max-width: 600px;
+  background: white;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.search-result-item {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.search-result-item:hover {
+  background: #f5f5f5;
+}
+
+.search-result-item:last-child {
+  border-bottom: none;
+}
+
+
+.search-results {
+  position: absolute;
+  top: 230px; /* Adjust to position the results below the search bar */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 500px;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  z-index: 10;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  
+  overflow-y: auto;
+}
+
+.search-results {
+  position: absolute; /* Ensure the search results are positioned properly relative to the parent container */
+  top: 230px; /* Adjust this to match the height of the search bar */
+  left: 50%;
+  width: 100%; /* Adjust the width to fit your layout */
+  max-height: 200px; /* Set a maximum height to make it scrollable */
+  overflow-y: auto; /* Enable vertical scrolling */
+  z-index: 1000; /* Ensure the results appear on top */
+  background-color: white; /* Set background color for better visibility */
+  border: 1px solid #ccc; /* Add a border for a clean look */
+  border-radius: 8px; /* Rounded corners for a modern design */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow for better visibility */
+}
+
+.search-result-item {
+  padding: 10px;
+  cursor: pointer;
+  border-bottom: 1px solid #eee;
+}
+
+.search-result-item:hover {
+  background-color: #f9f9f9;
+}
+
+.error-message {
+  color: red;
+  margin-top: 5px;
+  font-size: 14px;
+}
+
+.hidden {
+  display: none; /* Completely hide the element */
+  visibility: hidden; /* Ensure the element is not visible */
+}

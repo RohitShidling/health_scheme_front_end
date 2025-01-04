@@ -1,0 +1,50 @@
+.schemes-container {
+    padding: 20px;
+  }
+  
+  .schemes-container h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .schemes-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  
+  .scheme-card {
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .scheme-card .scheme-icon {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  .scheme-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .scheme-card p {
+    font-size: 1rem;
+    margin-bottom: 15px;
+  }
+  
+  .scheme-card button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
